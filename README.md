@@ -13,6 +13,8 @@ https://github.com/dhabaleshwar/CEHPractical/blob/main/Everything%20You%20Need.m
 
 https://github.com/DarkLycn1976/CEH-Practical-Notes-and-Tools
 
+
+
 $bytes = [System.IO.File]::ReadAllBytes("C:\Users\Administrator\Downloads\Conceal-Image-2025-01-14_gnp.exe")
 $peOffset = [BitConverter]::ToInt32($bytes, 0x3C)
 $magic = [BitConverter]::ToUInt16($bytes, $peOffset + 24)
