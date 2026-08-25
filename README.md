@@ -13,4 +13,4 @@ https://github.com/dhabaleshwar/CEHPractical/blob/main/Everything%20You%20Need.m
 
 https://github.com/DarkLycn1976/CEH-Practical-Notes-and-Tools
 
-tcpdump -r botnet.pcapng -nn | awk '{print $3}' | cut -d. -f1-4 | sort -u
+tcpdump -r botnet.pcapng -nn src host 10.22.99.169 -v | grep -i "ttl" | head -10
