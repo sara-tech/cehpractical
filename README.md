@@ -15,5 +15,5 @@ https://github.com/DarkLycn1976/CEH-Practical-Notes-and-Tools
 
 
 
-hydra -l admin -P Passwords.txt rdp://10.22.99.170
+scp boby@10.22.99.88:/home/boby/Downloads/botnet.pcapng ~/Desktop/
 
