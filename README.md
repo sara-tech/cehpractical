@@ -14,4 +14,4 @@ https://github.com/dhabaleshwar/CEHPractical/blob/main/Everything%20You%20Need.m
 https://github.com/DarkLycn1976/CEH-Practical-Notes-and-Tools
 
 
-tcpdump -r botnet.pcapng -nn -tt | awk '{sec=int($1); print sec, $3}' | sort | uniq -c | sort -rn | head -30
+tcpdump -r botnet.pcapng -nn -tt | awk '{sec=int($1); ip=$3; print sec, ip}' | sort | uniq -c | sort -rn | head -20
