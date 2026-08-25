@@ -14,6 +14,5 @@ https://github.com/dhabaleshwar/CEHPractical/blob/main/Everything%20You%20Need.m
 https://github.com/DarkLycn1976/CEH-Practical-Notes-and-Tools
 
 
-
-scp boby@10.22.99.88:/home/boby/Downloads/botnet.pcapng ~/Desktop/
+tcpdump -r botnet.pcapng -nn | awk '{print $3}' | cut -d. -f1-4 | sort | uniq -c | sort -rn | head -20
 
