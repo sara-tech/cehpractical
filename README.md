@@ -13,8 +13,9 @@ https://github.com/dhabaleshwar/CEHPractical/blob/main/Everything%20You%20Need.m
 
 https://github.com/DarkLycn1976/CEH-Practical-Notes-and-Tools
 
-cd C:\Users\Administrator\Downloads
-$bytes = [System.IO.File]::ReadAllBytes("Conceal-Image-2025-01-14_gnp.exe")
+$bytes = [System.IO.File]::ReadAllBytes("C:\Users\Administrator\Downloads\Conceal-Image-2025-01-14_gnp.exe")
 $peOffset = [BitConverter]::ToInt32($bytes, 0x3C)
+$magic = [BitConverter]::ToUInt16($bytes, $peOffset + 24)
+Write-Host "Magic: 0x$($magic.ToString('X4'))"
 $loaderFlags = [BitConverter]::ToUInt32($bytes, $peOffset + 24 + 88)
-Write-Host "Loader Flags Value: 0x$($loaderFlags.ToString('X8'))"  
+Write-Host "Loader Flags: 0x$($loaderFlags.ToString('X8'))"
