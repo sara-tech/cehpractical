@@ -14,4 +14,4 @@ https://github.com/dhabaleshwar/CEHPractical/blob/main/Everything%20You%20Need.m
 https://github.com/DarkLycn1976/CEH-Practical-Notes-and-Tools
 
 
-tcpdump -r botnet.pcapng -nn -v | grep -i "ttl" | head -20
+tcpdump -r botnet.pcapng -nn -v | grep -i "window" | head -10
