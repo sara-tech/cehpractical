@@ -14,4 +14,4 @@ https://github.com/dhabaleshwar/CEHPractical/blob/main/Everything%20You%20Need.m
 https://github.com/DarkLycn1976/CEH-Practical-Notes-and-Tools
 
 
-docker images | grep vuln2
+cat B64.txt | base64 -d
